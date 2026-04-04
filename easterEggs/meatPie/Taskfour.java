@@ -1,17 +1,15 @@
-import java.util.Scanner;
+
 
 public class Taskfour{
 
 
     public static void main(String [] args){
     
-    Scanner sc = new Scanner(System.in);
-    
-    System.out.print("What is the first number : ");
-    int number1 = sc.nextInt();
+   
+    int number1 = 12;
 
-    System.out.print("What is the second number : ");
-    int number2 = sc.nextInt();
+    
+    int number2 = 12;
 
     int differ = number1 -  number2;
 

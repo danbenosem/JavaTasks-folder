@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class Taskthree{
 
@@ -7,11 +7,11 @@ public class Taskthree{
     
     Scanner sc = new Scanner(System.in);
     
-    System.out.print("What is the first number : ");
-    int number1 = sc.nextInt();
+    
+    int number1 = 12;
 
-    System.out.print("What is the second number : ");
-    int number2 = sc.nextInt();
+    
+    int number2 = 12;
 
     int sum = number1 + number2;
 

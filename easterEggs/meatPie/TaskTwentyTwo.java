@@ -1,13 +1,11 @@
-import java.util.Scanner;
+
 
 public class TaskTwentyTwo{
 
     public static void main(String [] args){
     
-    Scanner sc = new Scanner(System.in);
-
-    System.out.print("Enter the radius:");
-    int number1 = sc.nextInt();
+   
+    int number1 = 7;
 
    
 
