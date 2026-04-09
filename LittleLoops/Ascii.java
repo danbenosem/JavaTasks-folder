@@ -10,17 +10,20 @@ public static void main (String [] args){
 Scanner sc = new Scanner(System.in);
 System.out.print("Enter a letter:");
 
-char user = sc.nextLine();
-char charac = 'A';
+char user = sc.next().charAt(0);
+char charc = 'A';
+int asci = (int) charc;
  
 
-while (charac<=user){
+while (charc<=user){
 
-System.out.println(user );
+System.out.println(charc);
+System.out.println(asci);
 
 
 
-charac++;
+charc++;
+asci++;
 
 
 }
