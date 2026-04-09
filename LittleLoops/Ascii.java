@@ -17,8 +17,8 @@ int asci = (int) charc;
 
 while (charc<=user){
 
-System.out.println(charc);
-System.out.println(asci);
+System.out.println(charc + "-" + asci);
+
 
 
 
