@@ -1,38 +1,36 @@
 import java.util.Scanner;
 
-public class CollectInput{
+public class cattern{
 
     public static void main(String []  args){
     
     Scanner sc= new Scanner(System.in);
    
-    System.out.print("enter the integers:");
-     int userDigit = sc.nextInt();
-int sum=0;
+    System.out.print("Enter the number of rows");
+     int row= sc.nextInt();
 
-while (userDigit > 0){
-
-sum+=userDigit%10;
-
-userDigit/=10;
+    System.out.print("Enter the number of column");
+     int column= sc.nextInt();
 
 
-   }
+    for (int number=1; number<=5; number++){
 
-  System.out.printf("the sum is %d",sum);
+
+        for(int numberTwo= number; numberTwo<=5; numberTwo++){
+            System.out.print("*");
+
+
+     }
+            System.out.println("");
+    }
+
+
+
+
+
+
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 }
