@@ -1,0 +1,36 @@
+def get_transaction_summary(transactions):
+    total_credits = 0
+    total_debits = 0
+
+    for transaction in transactions:
+        if transaction[0] == "credit":
+            total_credits += transaction[1]
+        elif transaction[0] == "debit":
+            total_debits += transaction[1]
+
+    net_balance = total_credits - total_debits
+    transaction_count = len(transactions)
+
+    return [
+        ["total_credits", total_credits],
+        ["total_debits", total_debits],
+        ["net_balance", net_balance],
+        ["transaction_count", transaction_count]
+    ]
+
+
+
+ elif choice == "5":
+        summary = get_transaction_summary(summary_transactions)
+        print(f"Total Credits: {summary[0][1]}")
+        print(f"Total Debits: {summary[1][1]}")
+        print(f"Net Balance: {summary[2][1]}")
+        print(f"Transaction Count: {summary[3][1]}")
+
+def test_transaction_summary():
+    transactions = [["credit", 2000], ["debit", 500], ["credit", 300]]
+    result = get_transaction_summary(transactions)
+    assert result[0] == ["total_credits", 2300]
+    assert result[1] == ["total_debits", 500]
+    assert result[2] == ["net_balance", 1800]
+    assert result[3] == ["transaction_count", 3]
