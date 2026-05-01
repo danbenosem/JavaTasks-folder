@@ -26,6 +26,8 @@ for (int number:even){
 System.out.println();
 System.out.println(runningTotal(array));//6
 
+sumDoWhileLoop(array);
+System.out.print(sumDoWhileLoop(array));//7
 }
 
 
@@ -137,6 +139,22 @@ for(int index=0; index<arrays.length; index++){
 return sum;
 
 }
+
+
+
+public static int sumDoWhileLoop(int[] arr) {
+    if (arr.length == 0) return 0;
+    
+    int sum = 0;
+    int i = 0;
+    do {
+        sum += arr[i];
+        i++;
+    } while (i < arr.length);
+    
+    return sum;
+}
+
 
 
 
